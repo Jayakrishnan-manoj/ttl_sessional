@@ -23,3 +23,10 @@ print(price)
 print("Minimum price:", np.min(price))
 print("Maximum price:", np.max(price))
 print("Average price:", np.mean(price))
+print("Standard deviation:",np.std(price))
+
+#4)make a pie chart of the car makers
+car_makers = auto_data['make'].value_counts()
+print(car_makers)
+plt.pie(car_makers, labels=car_makers.index)
+plt.show()
